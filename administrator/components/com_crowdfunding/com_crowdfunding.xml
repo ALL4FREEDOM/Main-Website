@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.6.0" method="upgrade">
+	<name>Crowdfunding</name>
+	<creationDate>15 March 2017</creationDate>
+	<author>Ray Selby</author>
+	<copyright>Goaheadspace 2017</copyright>
+	<license>GNU/GPL</license>
+	<authorUrl>www.goaheadspace.com</authorUrl>
+	<version>1.0.1</version>
+	<description>Client for Crowdfunding Modules. This component has no configuration options and only serves as a receiver of callbacks from Mollie buttons in the Crowdfunding modules.\n It will process those callbacks, so that the display, for the user, is respectful and informative.\n It will also notify the Campaign API, send an email to the backer etc.\n\n</description>
+	<files folder="site">
+		<filename>crowdfunding.php</filename>
+		<filename>controller.php</filename>
+		<filename>handle_update.php</filename>
+		<filename>index.html</filename>
+
+        	<folder>views</folder>		
+        	<filename>views/index.html</filename>
+		
+        	<folder>views/crowdfunding</folder>		
+        	<filename>views/crowdfunding/index.html</filename>		
+ 		<filename>views/crowdfunding/metadata.xml</filename>	
+		<filename>views/crowdfunding/view.html.php</filename>	
+        		
+		<folder>views/crowdfunding/tmpl</folder>		
+		<filename>views/crowdfunding/tmpl/default.xml</filename>	
+		<filename>views/crowdfunding/tmpl/index.html</filename>	
+		<folder>views/crowdfunding/assets</folder>		
+        	<filename>views/crowdfunding/assets/index.html</filename>
+		<folder>views/crowdfunding/assets/css</folder>		
+        	<filename>views/crowdfunding/assets/css/index.html</filename>
+        	<filename>views/crowdfunding/assets/css/default.css</filename>
+		<folder>views/crowdfunding/assets/img</folder>		
+        	<filename>views/crowdfunding/assets/img/index.html</filename>
+        	<filename>views/crowdfunding/assets/img/delete30.png</filename>
+        	<filename>views/crowdfunding/assets/img/exclamation-mark.png</filename>
+        	<filename>views/crowdfunding/assets/img/savings1.png</filename>
+	</files>
+
+	<administration>
+		<menu>COM_CROWDFUNDING_ADMIN_MENU</menu>
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>crowdfunding.php</filename>
+			<filename>class-campaign-api.php</filename>
+       			<folder>language</folder>		
+			<filename>language/index.html</filename>
+        		<filename>LICENSE.txt</filename> 		
+		</files>
+  		<languages folder="admin/language">
+			<filename>index.html</filename>
+    			<language tag="en-GB">en-GB/en-GB.com_crowdfunding.ini</language>
+			<filename>en-GB/index.html</filename>
+  		</languages>
+	</administration>
+
+	<updateservers>
+    		<server type="extension" priority="2" name="Crowdfunding Component"><![CDATA[http://www.goaheadspace.com/jupdate?product=crowdfunding]]></server>
+	</updateservers>
+
+</extension>
