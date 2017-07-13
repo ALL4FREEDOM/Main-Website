@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="main" >
+	
+		<field name="account_name" type="text" size="40" label="COM_PAYAGE_ACCOUNT_NAME" required="true" />
+
+		<field name="account_apikey" type="text" size="50" label="COM_PAYAGE_MOLLIE_APIKEY" required="true" />
+	
+		<field name="account_method" type="list" label="COM_PAYAGE_MOLLIE_METHOD" size="1" >
+			<option value="">All</option>
+			<option value="ideal">iDeal</option>
+			<option value="paysafecard">Paysafe Card</option>
+			<option value="creditcard">Credit Card</option>
+			<option value="mistercash">Mister Cash</option>
+			<option value="banktransfer">Bank Transfer</option>
+			<option value="paypal">PayPal</option>
+			<option value="sofort">Sofort Banking</option>
+			<option value="bitcoin">Bitcoin</option>
+		</field>		
+		
+		<field name="account_language" type="list" label="COM_PAYAGE_LANGUAGE" size="1" >
+			<option value="AUTO">Automatic</option>
+			<option value="EN">English</option>
+			<option value="NL">Dutch</option>
+			<option value="DE">German</option>
+			<option value="ES">Spanish</option>
+			<option value="FR">French</option>
+		</field>
+
+		<field name="account_currency" type="hidden" default="EUR" />
+		
+		<field name="currency_symbol" type="hidden" default="€" />
+		
+		<field name="currency_format" type="hidden" default="x.xxx,xx#" />
+
+		<field name="button_image" type="media" size="30" label="COM_PAYAGE_BUTTON" directory="pay_buttons" />
+		
+		<field name="button_title" type="text"	size="100" label="COM_PAYAGE_BUTTON_TITLE" />
+
+		<field name="account_description" type="text" size="100" label="COM_PAYAGE_DESCRIPTION" description="COM_PAYAGE_ACCOUNT_DESCRIPTION_DESC" />
+		
+		<field name="account_group" type="text" size="10" label="COM_PAYAGE_GROUP" />
+	</fieldset>
+
+	<fieldset name="extra" label="COM_PAYAGE_FEE">
+		<field name="fee_type" type="list" label="COM_PAYAGE_TYPE" size="1" >
+			<option value="0">JNONE</option>
+			<option value="1">COM_PAYAGE_PERCENT</option>
+			<option value="2">COM_PAYAGE_FIXED_AMOUNT</option>
+		</field>
+
+		<field name="fee_amount" type="text" size="10" label="COM_PAYAGE_AMOUNT" />
+		<field name="fee_min" type="text" size="10" label="COM_PAYAGE_FEE_MIN" />
+		<field name="fee_max" type="text" size="10" label="COM_PAYAGE_FEE_MAX" />
+	</fieldset>
+
+</form>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="component" label="COM_PERFECTDASHBOARD_FIELDSET_CONFIG_OPTIONS_LABEL" description="COM_PERFECTDASHBOARD_FIELDSET_CONFIG_OPTIONS_DESC">
+		<field
+			name="key"
+			type="text"
+            class="input-xxlarge"
+			label="COM_PERFECTDASHBOARD_FIELD_KEY_LABEL"
+			description="COM_PERFECTDASHBOARD_FIELD_KEY_DESC" />
+		<field
+			name="ak_access"
+			type="hidden"
+			label=""
+			description="" />
+		<field
+			name="backup_dir"
+			type="hidden"
+			label=""
+			description="" />
+		<field
+			name="ping"
+			type="hidden"
+			label=""
+			description="" />
+		<field
+			name="extensions_view_information"
+			type="hidden"
+			label=""
+			description="" />
+	</fieldset>
+</config>

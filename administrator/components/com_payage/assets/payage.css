@@ -1,0 +1,45 @@
+.icon-payage { background:url(lad_20.png) no-repeat; 
+                vertical-align:middle; height:26px !important; width:32px !important; margin-right:4px !important;}
+
+body {-webkit-font-smoothing: subpixel-antialiased !important; -moz-osx-font-smoothing: grayscale;}
+
+img {max-width:none !important;}
+
+div.form-group {margin-bottom:5px; }
+div.form-group > label {width:9em; margin-right:5px; margin-top:5px; vertical-align:top;}
+.form-inline input	{width:auto !important;}
+.lad-fieldset {display:inline-block; vertical-align:top; margin:0 10px 0 10px; padding:0 10px 0 10px; width:98%; }
+.lad-border {border:1px #CCC solid; border-radius:4px; }
+.lad-half {width:auto; max-width:46%;}
+.lad-fieldset legend {width:auto; margin-bottom:0; border-bottom:none; margin-left:15px; padding:0 10px 0 10px;}
+.lad-float-right {float:right;}
+.lad-date {display:inline-block;}
+.lad-date .input-append {margin-bottom:0;}
+div.field-media-wrapper {display:inline-block;}
+@media screen and (max-width:1000px) 
+{
+    .lad-half {max-width:95%; }
+}
+                
+select {background:#F7F7F7 !important; color: #555 !important; height:28px !important;}
+select:focus {background-color:#FFD !important;}
+
+input, textarea, select 	{margin-bottom:0 !important; width:auto !important;}
+
+.error_msg {color:red; font-weight:bold;}
+
+.report_totals {font-size:larger; font-weight:bold; border-top: 2px solid black; border-bottom: 2px solid black;}
+
+.tooltip {font-size:13px !important; font-weight:bold; opacity:1 !important;}
+
+/* change some tab styles */
+
+.nav-tabs > li > a {
+    background-color:#F5F5F5;
+    font-size:15px;
+    border-color:#E0E0E0 !important;
+}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+    color:white !important;
+    background-color:#64B5F6 !important;
+}

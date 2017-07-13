@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>Perfect Dashboard</name>
+	<author>Perfect Web</author>
+	<creationDate>2016-08-04</creationDate>
+	<copyright>Copyright (C) 2016 Perfect Web. All rights reserved.</copyright>
+	<license>GNU General Public Licence http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>office@perfect-web.co</authorEmail>
+	<authorUrl>www.perfect-web.co</authorUrl>
+	<version>1.4.8</version>
+	<description></description>
+
+	<files folder="site">
+        <filename>index.html</filename>
+		<filename>perfectdashboard.php</filename>
+		<filename>controller.php</filename>
+		<folder>models</folder>
+		<folder>helpers</folder>
+		<folder>libraries</folder>
+	</files>  
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/en-GB.com_perfectdashboard.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.com_perfectdashboard.sys.ini</language>
+		<language tag="pl-PL">language/pl-PL/pl-PL.com_perfectdashboard.ini</language>
+		<language tag="pl-PL">language/pl-PL/pl-PL.com_perfectdashboard.sys.ini</language>
+	</languages>
+
+	<administration>
+		<menu>com_perfectdashboard</menu>
+		<files folder="admin">
+            <filename>index.html</filename>
+			<filename>config.xml</filename>
+			<filename>perfectdashboard.php</filename>
+			<filename>controller.php</filename>
+            <filename>version.php</filename>
+			<folder>views</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_perfectdashboard.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_perfectdashboard.sys.ini</language>
+			<language tag="pl-PL">language/pl-PL/pl-PL.com_perfectdashboard.ini</language>
+			<language tag="pl-PL">language/pl-PL/pl-PL.com_perfectdashboard.sys.ini</language>
+		</languages>
+	</administration>
+
+	<media destination="com_perfectdashboard" folder="media">
+		<folder>css</folder>
+		<folder>images</folder>
+		<filename>index.html</filename>
+	</media>
+
+	<scriptfile>installer.script.php</scriptfile>
+</extension>

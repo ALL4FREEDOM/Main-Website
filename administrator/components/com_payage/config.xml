@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<config>
+
+	<fieldset name="basic" label="COM_PAYAGE_PAYMENT_RETENTION" description="COM_PAYAGE_PAYMENT_RETENTION_DESC">
+		<field name="time_to_keep_unconfirmed" type="text" size="5" default="60" label="COM_PAYAGE_UNCONFIRMED" 
+			description="COM_PAYAGE_TIME_TO_KEEP_UNCONFIRMED_DESC" />
+		<field name="time_to_keep_confirmed" type="text" size="5" default="0" label="COM_PAYAGE_CONFIRMED" 
+			description="COM_PAYAGE_TIME_TO_KEEP_CONFIRMED_DESC" />
+		<field name="error_email" type="text" size="50" default="" label="COM_PAYAGE_ERROR_EMAIL" 
+			description="COM_PAYAGE_ERROR_EMAIL_DESC" />
+	</fieldset>
+
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+		<field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" filter="rules" component="com_payage" section="component">
+			<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+			<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+		</field>
+	</fieldset>
+
+</config>
