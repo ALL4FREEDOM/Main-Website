@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5">
+<name>POWr Survey</name>
+<author>POWr.io</author>
+<creationDate>Jun 2015</creationDate>
+<version>3.5</version>
+<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+<authorEmail>info@powr.io</authorEmail>
+<authorUrl>http://powr.io</authorUrl>
+<packagename>POWr Survey</packagename>
+<packager>POWr.io</packager>
+<packagerurl>http://www.powr.io/</packagerurl>
+<description>Unique, beautiful, responsive surveys for your site.</description>
+<files folder="packages">
+  <file type="module" client="site">mod_powrsurvey.zip</file>
+  <file type="plugin" group="client">plg_powrshortcodes.zip</file>
+  <file type="plugin" group="client">plg_powricon.zip</file>
+</files>
+</extension>
