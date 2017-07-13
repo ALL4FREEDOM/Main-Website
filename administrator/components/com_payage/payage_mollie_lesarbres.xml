@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" version="2.5.0" method="upgrade">
+<name>Payage_Mollie</name>
+<creationDate>13 December 2014</creationDate>
+<author>Les Arbres Design</author>
+<copyright>Les Arbres Design 2014</copyright>
+<license>GNU/GPL</license>
+<authorUrl>http://www.lesarbresdesign.info</authorUrl>
+<authorEmail></authorEmail>
+<version>1.00</version>
+<description>Mollie Gateway for Payage</description>
+
+<gateway_info>
+	<type>Mollie_LesArbres</type>
+	<shortName>Mollie</shortName>
+	<longName>Mollie</longName>
+	<defaultButton>images/pay_buttons/mollie_01.png</defaultButton>
+	<defaultTitle>Pay with Mollie</defaultTitle>
+	<gatewayUrl>https://www.mollie.nl/</gatewayUrl>
+	<helpUrl>http://www.lesarbresdesign.info/contact-us</helpUrl>
+	<docUrl>http://www.lesarbresdesign.info/extensions/payage</docUrl>
+</gateway_info>
+
+<fileset>
+        <files target="administrator/components/com_payage">
+            <filename>payage_mollie_lesarbres.xml</filename>
+        </files>
+
+        <files target="images">
+            <folder>pay_buttons</folder>
+        </files>
+        
+        <files target="administrator/components/com_payage/models">
+            <filename>mollie_lesarbres.php</filename>
+        </files>
+        
+        <files target="administrator/components/com_payage/forms">
+            <filename>mollie_lesarbres.xml</filename>
+        </files>
+        
+        <files target="administrator/components/com_payage/">
+            <folder>language</folder>
+        </files>
+
+        <files target="administrator/components/com_payage/helpers">
+            <folder>Mollie</folder>
+        </files>
+</fileset>
+
+</extension>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1.1" method="upgrade">
+<name>com_payage</name>
+<creationDate>15 June 2017</creationDate>
+<author>Les Arbres Design</author>
+<copyright>Les Arbres Design 2014-2017</copyright>
+<license>GNU/GPL</license>
+<authorUrl>www.lesarbresdesign.info</authorUrl>
+<version>2.06</version>
+<description>A payment system for multiple applications and multiple payment gateways</description>
+
+<scriptfile>install.php</scriptfile>
+
+<files folder="site">
+	<filename>payage.php</filename>
+	<filename>index.html</filename>
+ </files>
+
+<administration>
+	<menu img="../administrator/components/com_payage/assets/payage-16.png">PAYAGE</menu>
+	<submenu>
+		<menu img="../administrator/components/com_payage/assets/payage-16.png" controller="payment">COM_PAYAGE_PAYMENTS</menu>
+		<menu img="../administrator/components/com_payage/assets/account-16.png" controller="account">COM_PAYAGE_ACCOUNTS</menu>
+		<menu img="../administrator/components/com_payage/assets/info-16.png" controller="report">COM_PAYAGE_REPORTS</menu>
+		<menu img="../administrator/components/com_payage/assets/info-16.png" controller="about">COM_PAYAGE_ABOUT</menu>
+	</submenu>
+
+	<files folder="admin">
+		<filename>payage.php</filename>
+		<filename>api.php</filename>
+		<filename>config.xml</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>forms</folder>
+		<folder>views</folder>
+		<folder>language</folder>
+		<folder>falang</folder>
+	</files>
+
+</administration>
+
+<updateservers>
+    <server type="collection" priority="2" name="Payage Gateways"><![CDATA[http://www.lesarbresdesign.info/jupdate?product=payage&type=collection]]></server>
+    <server type="extension" priority="2" name="Payage Component"><![CDATA[http://www.lesarbresdesign.info/jupdate?product=payage]]></server>
+</updateservers>
+
+</extension>
