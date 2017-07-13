@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+	
+	   <field name="title" type="text" class="input-xxlarge"
+            label="COM_ITPMETA_TITLE"
+            required="true" 
+        />
+        
+        <field 
+            name="type" 
+            type="text" 
+            label="COM_ITPMETA_TYPE" 
+            readonly="true" 
+            class="readonly"
+        />
+        
+        <field
+            name="published"
+            type="list"
+            label="JSTATUS"
+            description="COM_ITPMETA_FIELD_STATE_DESC"
+            size="1"
+            default="1">
+            <option
+                value="1">JPUBLISHED</option>
+            <option
+                value="0">JUNPUBLISHED</option>
+        </field>
+        
+        <field name="content" type="textarea"
+            label="COM_ITPMETA_CONTENT"
+            description="COM_ITPMETA_FIELD_CONTENT_DESC"
+        />
+            
+        <field name="tag" type="textarea" 
+            label="COM_ITPMETA_TAG" 
+            description="COM_ITPMETA_FIELD_TAG_DESC"
+            filter="raw"
+        />
+        
+        <field name="output" type="textarea"
+            label="COM_ITPMETA_OUTPUT" 
+            description="COM_ITPMETA_FIELD_OUTPUT_DESC"
+            required="true"
+            filter="raw"
+        />
+        
+        <field 
+           name="id" 
+           type="text" 
+           default="0" 
+           label="JGLOBAL_FIELD_ID_LABEL" 
+           description="JGLOBAL_FIELD_ID_DESC"
+           readonly="true" 
+           class="readonly"
+        />
+        
+        <field name="url_id" type="hidden" default="0" />
+        <field name="name" type="hidden" />
+        
+	</fieldset>
+</form>
